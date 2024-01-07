@@ -24,9 +24,9 @@ export class AuthService {
     this.token = token
   }
 
-  getToken() {
+   get getToken() {
     this.token = localStorage.getItem('token');
-    return this.token = this.token;
+    return this.token;
   }
 
   usuarioAutenticado(status: boolean) {
